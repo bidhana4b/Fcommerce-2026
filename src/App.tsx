@@ -41,6 +41,7 @@ import POS from "./components/pages/POS";
 import Inventory from "./components/pages/Inventory";
 import Suppliers from "./components/pages/Suppliers";
 import Reports from "./components/pages/Reports";
+import AIModeratorCRM from "./components/pages/AIModeratorCRM";
 
 // Lazy load storyboards
 const ProductDetailsStoryboard = lazy(
@@ -100,6 +101,7 @@ function App() {
             <Route path="inventory" element={<Inventory />} />
             <Route path="suppliers" element={<Suppliers />} />
             <Route path="reports" element={<Reports />} />
+            <Route path="ai-moderator" element={<AIModeratorCRM />} />
           </Route>
 
           {/* Admin Routes */}

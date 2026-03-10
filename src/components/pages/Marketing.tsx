@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import React, { useState } from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -11,51 +11,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Switch } from "@/components/ui/switch";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-import {
-  Facebook,
-  Instagram,
-  Image as ImageIcon,
-  Calendar,
-  Sparkles,
-  Hash,
-  Copy,
-  Send,
-  Clock,
-  Heart,
-  MessageCircle,
-  Share2,
-  Eye,
-  TrendingUp,
-  Wand2,
-  Layout,
-  Download,
-  Plus,
-  MessageSquare,
-  Bot,
-  Zap,
-  Settings,
-  ChevronRight,
-  Upload,
-  Package,
-  Check,
-  X,
-  Eraser,
-  Crop,
-  Palette,
-  Video,
-  Star,
-  Target,
-  CalendarDays,
-  Gift,
-  Users,
-  Trophy,
-  Play,
-  Music,
-  Type,
-  Layers,
-} from "lucide-react";
+import { Facebook, Instagram, Sparkles, Hash, Copy, Send, Clock, Heart, MessageCircle, Share2, Eye, TrendingUp, Target, Calendar } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import DiscountCodeSystem from "@/components/DiscountCodeSystem";
+
 
 const mockPosts = [
   {
@@ -209,7 +168,7 @@ export default function Marketing() {
       {/* Header */}
       <div>
         <h1 className="text-3xl font-bold tracking-tight">মার্কেটিং ও অটোমেশন</h1>
-        <p className="text-muted-foreground mt-2">সোশ্যাল মিডিয়া পোস্ট, AI টুলস এবং চ্যাটবট ম্যানেজমেন্ট</p>
+        <CardDescription>নতুন ফেসবুক ক্যাম্পেইন তৈরি করুন</CardDescription>
       </div>
 
       <Tabs defaultValue="campaigns" className="w-full">
@@ -230,6 +189,13 @@ export default function Marketing() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                  {/* Facebook Ad System */}
+                  <div className="space-y-2">
+                    <Label>Facebook Ad Campaign</Label>
+                    <Input type="text" placeholder="Campaign Name" />
+                    <Textarea placeholder="Ad Copy" />
+                    <Button>Generate Ad</Button>
+                  </div>
                 {/* Platform Selection */}
                 <div className="space-y-2">
                   <Label>প্ল্যাটফর্ম নির্বাচন করুন</Label>

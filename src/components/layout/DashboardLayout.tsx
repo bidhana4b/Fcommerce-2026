@@ -25,6 +25,7 @@ import {
   Warehouse,
   Building2,
   FileBarChart,
+  Bot,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -84,6 +85,13 @@ const navigation = [
     badge: 15,
   },
   {
+    name: "AI মডারেটর",
+    name_en: "AI Moderator",
+    href: "/dashboard/ai-moderator",
+    icon: Bot,
+    badge: "২৪/৭",
+  },
+  {
     name: "পেমেন্ট",
     name_en: "Payments",
     href: "/dashboard/payments",
@@ -120,7 +128,7 @@ const mobileNavigation = [
   { name: "হোম", href: "/dashboard", icon: Home },
   { name: "POS", href: "/dashboard/pos", icon: Calculator },
   { name: "অর্ডার", href: "/dashboard/orders", icon: ShoppingCart, badge: 8 },
-  { name: "চ্যাট", href: "/dashboard/chat", icon: MessageSquare, badge: 15 },
+  { name: "AI মডারেটর", href: "/dashboard/ai-moderator", icon: Bot, badge: "24/7" },
   { name: "পণ্য", href: "/dashboard/products", icon: Package },
 ];
 
