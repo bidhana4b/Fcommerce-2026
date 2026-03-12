@@ -6,7 +6,7 @@ import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import gsap from "gsap";
+
 import { 
   AnimatedCounter, 
   AnimatedProgress,

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, ReactNode, forwardRef } from 'react';
-import gsap from 'gsap';
+
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import { cn } from '@/lib/utils';
